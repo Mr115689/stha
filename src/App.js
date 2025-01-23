@@ -3,6 +3,8 @@ import { RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import AddForm from "./pages/AddForm";
+import EditForm from "./pages/EditForm";
 
 
 const App = () => {
@@ -17,6 +19,14 @@ const App = () => {
         {
           index: true,
           element: <Home />
+        },
+        {
+          path: 'add-form',
+          element: <AddForm />
+        },
+        {
+          path: 'edit-form/:id',
+          element: <EditForm />
         },
 
         {

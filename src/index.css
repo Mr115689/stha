@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn {
+  @apply bg-orange-500 px-5 py-2 text-white
+}
